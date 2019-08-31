@@ -6,17 +6,21 @@ import { FormsComponent } from './forms/forms.component';
 
 const routes: Routes = [
     {
-        path: '',
-        component: DataMiningComponent
-    },
-    {
         path: 'questionnaire',
         component: NewReturnComponent
     },
     {
         path: 'forms',
         component: FormsComponent
-    }
+    },
+    {
+        path: 'data',
+        component: DataMiningComponent
+    },
+    {
+        path: '**',
+        component: DataMiningComponent
+    },
 ];
 
 @NgModule({
