@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class FormService {
 
-    public suggestedFormsList: string[] = ['Schedule C'];
+    public suggestedFormsList: string[] = [];
 
     constructor(private http: HttpClient) { }
 

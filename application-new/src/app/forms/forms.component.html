@@ -1,6 +1,21 @@
 <div class="row">
     <div class="column col-md-3 border border-dark p-md-4">
-        <tree-root [nodes]="nodes" [(state)]="state" [options]="options" (activate)="nodeClicked($event)"></tree-root>
+        <tree-root [nodes]="nodes" [(state)]="state" [options]="options" (activate)="nodeClicked($event)">
+            <ng-template #treeNodeWrapperTemplate let-node let-index="index">
+                <div class="node-wrapper" [style.padding-left]="node.getNodePadding()">
+                    <tree-node-expander [node]="node"></tree-node-expander>
+                    <div class="node-content-wrapper"
+                        [class.node-content-wrapper-active]="node.isActive"
+                        [class.node-content-wrapper-focused]="node.isFocused"
+                        (click)="node.mouseAction('click', $event)" (dblclick)="node.mouseAction('dblClick', $event)"
+                        (contextmenu)="node.mouseAction('contextMenu', $event)" (treeDrop)="node.onDrop($event)"
+                        [treeAllowDrop]="node.allowDrop" [treeDrag]="node" [treeDragEnabled]="node.allowDrag()">
+                        <tree-node-content [node]="node" [index]="index"></tree-node-content>
+                    </div>
+                    <img src="./assets/data/images/suggestion.jpg" *ngIf="node.data.type === 'Suggested'" />
+                </div>
+            </ng-template>
+        </tree-root>
     </div>
     <div class="column col-md-9 border border-dark p-md-4">
         <ng-container *ngIf="forms">
@@ -11,14 +26,18 @@
                     </label>
                 </div>
                 <div *ngIf="form.Type === 'Text_Input'" class="column col-md-10">
-                    <input type="text" [(ngModel)]="data[form.Name]"  [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}"/>
+                    <input type="text" [(ngModel)]="data[form.Name]"
+                        [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}" />
+                    <img src="./assets/data/images/suggestion.jpg" *ngIf="form.Name !== '' && isSuggestedForm" />
                 </div>
                 <div *ngIf="form.Type === 'Drop_Down'" class="column col-md-10">
-                    <select [(ngModel)]="data[form.Name]" [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}">
+                    <select [(ngModel)]="data[form.Name]"
+                        [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}">
                         <option *ngFor="let option of form.Options; trackBy: trackByFn" [ngValue]="option.Value">
                             {{option.Display}}
                         </option>
                     </select>
+                    <img src="./assets/data/images/suggestion.jpg" *ngIf="form.Name !== '' && isSuggestedForm" />
                 </div>
             </div>
         </ng-container>

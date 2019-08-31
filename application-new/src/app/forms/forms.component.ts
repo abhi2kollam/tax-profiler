@@ -70,7 +70,7 @@ export class FormsComponent implements OnInit {
                 key: node.replace(/\s/g, ''),
                 name: node,
                 type: "Suggested"
-            })
+            });
         }
         return nodes;
     }
