@@ -1,0 +1,86 @@
+{
+	"Form5329": {
+		"RothIRAExcessContriAdjustAmt": {
+			"Value": "1200",
+			"ChildValues": []
+		},
+		"RothIRAExcessContriPYWthdrwAmt": {
+			"Value": "1900",
+			"ChildValues": []
+		},
+		"RothIRAExcessContriTotalAmt": {
+			"Value": "1900",
+			"ChildValues": []
+		},
+		"RothIRAExcessContribTaxAmt": {
+			"Value": "114",
+			"ChildValues": []
+		},
+		"RothIRADistriIncludedInCYAmt": {
+			"Value": "1200",
+			"ChildValues": []
+		}
+	},
+	"Form8880": {
+		"PrimaryRothIRAForCurrentYrAmt": {
+			"Value": "500"
+		},
+		"AddPrimRothIRAToCYContriAmt": {
+			"Value": "500"
+		},
+		"PrimTaxableDistributionsAmt": {
+			"Value": "28300"
+		},
+		"TaxReturnAGIAmt": {
+			"Value": "32093"
+		},
+		"CalculatedCreditsFromTaxAmt": {
+			"Value": "918"
+		},
+		"CreditLimitWorksheet": {
+			"TotalTaxBeforeCrAndOthTaxesAmt": {
+				"Value": "968"
+			},
+			"TotalCreditAmt": {
+				"Value": "50"
+			},
+			"CreditLimit": {
+				"Value": "918"
+			}
+		}
+	},
+	"Form8863": {
+		"NonrefundableEducationCr": {
+			"TotalQualifiedExpensesAmt": {
+				"Value": "250"
+			},
+			"SmllrOfTotExpnssOrSpcfdAmt": {
+				"Value": "250"
+			},
+			"TentLifetimeLearningCreditAmt": {
+				"Value": "50"
+			},
+			"EnterSpecifiedAmountForFSAmt": {
+				"Value": "66000"
+			},
+			"ModifiedAGIAmt": {
+				"Value": "32093"
+			},
+			"SubtractAGIFromAmt": {
+				"Value": "33907"
+			},
+			"SpecifiedAmtPerFSAmt": {
+				"Value": "10000"
+			},
+			"CalcTentativeEducationRt": {
+				"Value": "1"
+			},
+			"CalcTentativeEducationCrAmt": {
+				"Value": "50"
+			},
+			"NonrefundableEducationCrAmt": {
+				"Value": "50"
+			}
+		}
+	}
+}

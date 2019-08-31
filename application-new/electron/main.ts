@@ -35,7 +35,32 @@ function createWindow() {
     });
 }
 
-ipcMain.on("getFiles", (event, arg) => {
-    const files = fs.readdirSync(__dirname);
-    win.webContents.send("getFilesResponse", files);
+ipcMain.on("processFiles", (event, arg) => {
+    const tableColumns = []
+    const headers = [];
+    const rows: any[] = [];
+    const config = arg.config;
+    for (let index = 0; index < config.length; index++) {
+        const formDetails = config[index];
+        headers.push(formDetails.ColumnName);
+    }
+    console.log("headers", headers)
+    for (let rowindex = 0; rowindex < arg.files.length; rowindex++) {
+        rows.push({});
+        const file = arg.files[rowindex];
+        fs.readFile(file.path, (err, data: any) => {
+            if (err) throw err;
+            let content = JSON.parse(data);
+            const config = arg.config;
+            for (let index = 0; index < config.length; index++) {
+                const formDetails = config[index];
+                rows[rowindex][formDetails.ColumnName] = content[formDetails.FormNumber] ? 1 : 0;
+            }
+            console.log(rows, "rows")
+            if (rowindex == arg.files.length - 1) {
+                win.webContents.send("getFilesResponse", { rows, headers });
+            }
+
+        });
+    }
 });
