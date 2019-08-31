@@ -1,0 +1,49 @@
+{
+    "FieldList": [
+        {
+            "Name": "TotalRefundReceivedAmt",
+            "Text": "Total Refund Received Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "PropertyDispositionAmt",
+            "Text": "Property Disposition Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "AlternativeMinimumTaxExemptAmt",
+            "Text": "Alternative Minimum Tax Exempt Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "AdjustedRegularTaxAmt",
+            "Text": "Adjusted Regular Tax Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Long-term contracts",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Mining costs",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Research and experimental costs",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Income from certain installment sales before January 1, 1987",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Intangible drilling costs preference",
+            "Type": "Text_Input"
+        }
+    ]
+}

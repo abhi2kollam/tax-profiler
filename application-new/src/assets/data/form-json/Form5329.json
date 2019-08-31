@@ -1,0 +1,39 @@
+{
+    "FieldList": [
+        {
+            "Name": "RothIRAExcessContriAdjustAmt",
+            "Text": "Additional Tax on Early Distributions",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "RothIRAExcessContriPYWthdrwAmt",
+            "Text": "Additional Tax on Excess Contributions to Roth IRAs",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "RothIRAExcessContriTotalAmt",
+            "Text": "Additional Tax on Excess Contributions to Health Savings Accounts",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "RothIRAExcessContribTaxAmt",
+            "Text": "Additional Tax on Early Distributions",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "RothIRADistriIncludedInCYAmt",
+            "Text": "Additional Tax on Excess Accumulation in Qualified Retirement Plans",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Additional Tax on Certain Distributions From Education Accounts",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Additional Tax on Excess Contributions to an ABLE Account",
+            "Type": "Text_Input"
+        }
+    ]
+}

@@ -3,12 +3,14 @@
         "id": 1,
         "name": "Personal Information",
         "key": "PI",
+        "type": "Default",
         "children": []
     },
     {
         "id": 2,
         "name": "Filing Status",
         "key": "FilingStatus",
+        "type": "Default",
         "children": []
     }
 ]

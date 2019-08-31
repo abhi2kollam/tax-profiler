@@ -1,0 +1,29 @@
+{
+    "FieldList": [
+        {
+            "Name": "PrimaryRothIRAForCurrentYrAmt",
+            "Text": "IRA Contributions for Current Year Amount by Tax Payer",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "AddPrimRothIRAToCYContriAmt",
+            "Text": "Additional IRA Contributions to Current Year by Tax Payer",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "PrimTaxableDistributionsAmt",
+            "Text": "Tax Payer Taxable Distribution Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TaxReturnAGIAmt",
+            "Text": "Tax Return AGI Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "CalculatedCreditsFromTaxAmt",
+            "Text": "Calculated Credits from Tax Amount",
+            "Type": "Text_Input"
+        }
+    ]
+}

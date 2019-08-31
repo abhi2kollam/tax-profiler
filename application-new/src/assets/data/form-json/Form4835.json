@@ -1,0 +1,39 @@
+{
+    "FieldList": [
+        {
+            "Name": "GrossFarmRentalIncomeAmt",
+            "Text": "Gross Farm Rental Income Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "NetFarmRentalIncomeOrLossAmt",
+            "Text": "Net Farm Rental Income or Loss Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Car and truck expenses",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Chemicals",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Conservation expenses",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Labor hired",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TotalExpensesAmt",
+            "Text": "Total Expence Amount",
+            "Type": "Text_Input"
+        }
+    ]
+}

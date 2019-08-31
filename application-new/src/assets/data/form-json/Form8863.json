@@ -1,0 +1,34 @@
+{
+    "FieldList": [
+        {
+            "Name": "TotalQualifiedExpensesAmt",
+            "Text": "Total Qialified Expense Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TentLifetimeLearningCreditAmt",
+            "Text": "Tentative Lifetime Learning Credit Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "ModifiedAGIAmt",
+            "Text": "Modified Adjusted Gross Income Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "NonrefundableEducationCrAmt",
+            "Text": "Non Refundable Education Credit Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Adjusted qualified education expenses",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Refundable American opportunity credit. ",
+            "Type": "Text_Input"
+        }
+    ]
+}

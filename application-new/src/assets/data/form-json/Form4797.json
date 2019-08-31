@@ -1,0 +1,39 @@
+{
+    "FieldList": [
+        {
+            "Name": "TotalOrdinaryGainLossAmt",
+            "Text": "Total Ordinary Gain Loss Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "OtherGainLossAmt",
+            "Text": "Other Gain Loss Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Gross sales price",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Cost or other basis plus expense of sale",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Depreciation (or depletion) allowed or allowable",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Adjusted basis",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Total gains for all properties",
+            "Type": "Text_Input"
+        }
+    ]
+}

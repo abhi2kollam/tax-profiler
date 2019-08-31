@@ -1,0 +1,44 @@
+{
+    "FieldList": [
+        {
+            "Name": "VehicleExpenseAmt",
+            "Text": "Vehicle expense",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Depreciation of Vehicles",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Gasoline, oil, repairs, vehicle insurance, etc.",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Vehicle rentals",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TotExpnssLessMealsEntrmtAmt",
+            "Text": "Total Expences excluding Meals and Entertainment Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TotalMealsAndEntertainmentAmt",
+            "Text": "Meals expenses",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "UnreimbursedBusinessExpenseAmt",
+            "Text": "Unreimbursed Business Expense Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "UnreimbursedMealsExpenseAmt",
+            "Text": "Unreimbursed Meals Expense Amount",
+            "Type": "Text_Input"
+        }
+    ]
+}

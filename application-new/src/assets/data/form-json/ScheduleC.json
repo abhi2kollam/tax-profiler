@@ -1,0 +1,54 @@
+{
+    "FieldList": [
+        {
+            "Name": "SumGrossReceipts",
+            "Text": "Sum of Gross Receipts",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "NetGrossReceiptsAmt",
+            "Text": "Net Gross Receipts Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "GrossProfitAmt",
+            "Text": "Gross Profit Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "OtherIncomeAmt",
+            "Text": "Other Income Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Advertising",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Car and truck expenses",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Commissions and fees",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Depreciation and section 179 expense deduction",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Employee benefit programs",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Insurance",
+            "Type": "Text_Input"
+        }
+    ]
+}
