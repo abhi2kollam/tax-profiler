@@ -1,0 +1,27 @@
+{
+    "FieldList": [
+        {
+            "Name": "FilingStatus",
+            "Text": "First Status",
+            "Type": "Drop_Down",
+            "Options": [
+                {
+                    "Display": "Single",
+                    "Value": "Single"
+                },
+                {
+                    "Display": "Married Filing Joint",
+                    "Value": "Married Filing Joint"
+                },
+                {
+                    "Display": "Married Filing Separate",
+                    "Value": "Married Filing Separate"
+                },
+                {
+                    "Display": "Head of Household",
+                    "Value": "Head of Household"
+                }
+            ]
+        }
+    ]
+}

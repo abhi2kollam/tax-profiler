@@ -1,0 +1,34 @@
+{
+    "FieldList": [
+        {
+            "Name": "FirstName",
+            "Text": "First Name",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "LastName",
+            "Text": "Last Name",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "SSN",
+            "Text": "SSN",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "DOB",
+            "Text": "DOB",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "Citizenship",
+            "Text": "Citizenship",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "MaritalStatus",
+            "Text": "Marital Status",
+            "Type": "Text_Input"
+        }
+    ]
+}

@@ -11,7 +11,11 @@ export class FormService {
         return this.http.get('assets/data/tree-render.json').toPromise();
     }
 
-    public getFormJson() {
-        return this.http.get('assets/data/form-render.json').toPromise();
+    public getFormJson(formname: string) {
+        return this.http.get(`assets/data/form-json/${formname}.json`).toPromise();
+    }
+
+    public getFormData(formname: string) {
+        return this.http.get(`assets/data/form-data/${formname}.json`).toPromise();
     }
 }
