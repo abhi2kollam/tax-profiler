@@ -1,0 +1,68 @@
+[
+    {
+        "FormNumber": "Form4797 ",
+        "icon": "wages.png",
+        "ColumnName": "SaleBusinessProperty ",
+        "Questionnaire": "Did you Sell any Business Propery this year?"
+    },
+    {
+        "FormNumber": "Form6251 ",
+        "ColumnName": "AlternateMinimumTax ",
+        "Questionnaire": "Is alternate Minimum Tax Applicable for you?"
+    },
+    {
+        "FormNumber": "Form4835 ",
+        "ColumnName": "FarmRentalIncome     ",
+        "Questionnaire": "Did you have any farm Rental income?"
+    },
+    {
+        "FormNumber": "Form8606 ",
+        "ColumnName": "ContributionIRA      ",
+        "Questionnaire": "Did you make any non deductible contributions to IRA"
+    },
+    {
+        "FormNumber": "Form4562 ",
+        "ColumnName": "DepreciationProperty ",
+        "Questionnaire": "Do you expect any depreciation of any property that you own"
+    },
+    {
+        "FormNumber": "Form8949 ",
+        "ColumnName": "CapitalAssetSale    ",
+        "Questionnaire": "Did you Sell any capital assets this year"
+    },
+    {
+        "FormNumber": "Form5329 ",
+        "ColumnName": "AdditionalTaxIRA    ",
+        "Questionnaire": "Were any additional taxes Applicable for IRA contributions"
+    },
+    {
+        "FormNumber": "Form8880 ",
+        "ColumnName": "SaversCredit        ",
+        "Questionnaire": "Do you qualify for savers Credit"
+    },
+    {
+        "FormNumber": "Form8863 ",
+        "ColumnName": "EducationCredit",
+        "Questionnaire": "Do you want to offset higher education expenses for PG"
+    },
+    {
+        "FormNumber": "Schedule8812 ChildTaxCredit       ",
+        "ColumnName": "ChildTaxCredit",
+        "Questionnaire": "Did you provide half of the Child Support and is your child younger than 16"
+    },
+    {
+        "FormNumber": "ScheduleC",
+        "ColumnName": "ProfitLossBusiness",
+        "Questionnaire": "Did you have a profit or loss from your Business"
+    },
+    {
+        "FormNumber": "Form2106 ",
+        "ColumnName": "EmployeeBusinessExpenses",
+        "Questionnaire": "Did you incur any Employee Business Expenses"
+    },
+    {
+        "FormNumber": "Form2106 ",
+        "ColumnName": "ClientGovernmentOfficial",
+        "Questionnaire": "Are your Federal/State Government official"
+    }
+]
