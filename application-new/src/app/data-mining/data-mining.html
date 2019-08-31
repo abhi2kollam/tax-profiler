@@ -2,9 +2,8 @@
     <div class="input-group">
         <div class="input-group-prepend"></div>
         <div class="custom-file">
-            <input aria-describedby="inputGroupFileAddon01" class="custom-file-input" #file 
-                id="inputGroupFile01" type="file" multiple><label class="custom-file-label"
-                for="inputGroupFile01">Choose OLZ</label>
+            <input aria-describedby="inputGroupFileAddon01" class="custom-file-input" #file id="inputGroupFile01"
+                type="file" multiple><label class="custom-file-label" for="inputGroupFile01">Choose OLZ</label>
         </div>
     </div>
     <div class="mb-2 mt-2 no-gutters pull-right row">
@@ -15,22 +14,10 @@
 
     <table class="table">
         <tr>
-            <th>SaleBusinessProperty</th>
-            <th>AlternateMinimumTax</th>
-            <th>FarmRentalIncome</th>
-            <th>ContributionIRA</th>
-            <th>DepreciationProperty</th>
-            <th>CapitalAssetSale</th>
-            <th>AdditionalTaxIRA</th>
-            <th>SaversCredit</th>
-            <th>EducationCredit</th>
-            <th>ChildTaxCredit</th>
-            <th>ProfitLossBusiness</th>
-            <th>ClientGovernmentOfficial</th>
-            <th>EmployeeBusinessExpenses</th>
+            <th *ngFor="let header of TABLE_HEADER">{{header}}</th>
         </tr>
         <tr *ngFor="let row of tableRows">
-            <td *ngFor="let col of tableColumns">
+            <td *ngFor="let col of row">
                 {{col}}
             </td>
         </tr>

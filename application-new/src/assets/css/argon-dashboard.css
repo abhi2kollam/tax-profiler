@@ -4222,7 +4222,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     background-color: #fff;
     background-clip: border-box;
     border-radius: 0.375rem;
-    box-shadow:3px 3px 2px #ccc
+    box-shadow:0px 0px 10px #ccc
 }
 
 .card>hr {
