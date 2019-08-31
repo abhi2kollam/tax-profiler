@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-new-return',
-    template: '<h1>New return</h1>'
+    templateUrl: 'new-return.component.html'
 })
 export class NewReturnComponent implements OnInit {
 
