@@ -1,0 +1,29 @@
+{
+    "FieldList": [
+        {
+            "Name": "VehicleUsageTotalMilesCnt",
+            "Text": "Total Miles Driven",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Election To Expense Certain Property",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Special Depreciation Allowance",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "MACRS Depreciation",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Amortization of costs",
+            "Type": "Text_Input"
+        }
+    ]
+}

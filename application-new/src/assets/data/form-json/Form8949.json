@@ -1,0 +1,34 @@
+{
+    "FieldList": [
+        {
+            "Name": "TotalProceedsSalesPriceAmt",
+            "Text": "Total Proceeds from Sales",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TotalCostOrOtherBasisAmt",
+            "Text": "Total Cost or Other Basis Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "TotalGainOrLossAmt",
+            "Text": "Total Gain or Loss Amount",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Short Term Capital Gains",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Short Term Capital Loss",
+            "Type": "Text_Input"
+        },
+        {
+            "Name": "",
+            "Text": "Total Adjustments to Gain or Loss Amount",
+            "Type": "Text_Input"
+        }
+    ]
+}
