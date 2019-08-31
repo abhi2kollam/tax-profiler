@@ -5,6 +5,9 @@ import { HttpClient } from "@angular/common/http";
     providedIn: 'root'
 })
 export class FormService {
+
+    public suggestedFormsList: string[] = ['Schedule C'];
+
     constructor(private http: HttpClient) { }
 
     public getTreeData(): any {

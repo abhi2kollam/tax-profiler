@@ -11,10 +11,10 @@
                     </label>
                 </div>
                 <div *ngIf="form.Type === 'Text_Input'" class="column col-md-10">
-                    <input type="text" [(ngModel)]="data[form.Name]" />
+                    <input type="text" [(ngModel)]="data[form.Name]"  [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}"/>
                 </div>
                 <div *ngIf="form.Type === 'Drop_Down'" class="column col-md-10">
-                    <select [(ngModel)]="data[form.Name]">
+                    <select [(ngModel)]="data[form.Name]" [ngClass]="{'suggested' : form.Name !== '' && isSuggestedForm}">
                         <option *ngFor="let option of form.Options; trackBy: trackByFn" [ngValue]="option.Value">
                             {{option.Display}}
                         </option>
