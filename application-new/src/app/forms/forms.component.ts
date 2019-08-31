@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FormService } from './forms.service';
+
 @Component({
     selector: 'app-forms',
     templateUrl: './forms.component.html'
@@ -8,35 +10,26 @@ export class FormsComponent implements OnInit {
 
     public nodes: any[];
     public options: any;
+    public forms: any;
+    public data: { [key: string]: string } = {};
 
-    constructor() { }
+    constructor(private dataService: FormService) { }
 
     ngOnInit() {
-        this.nodes = [
-            {
-                id: 1,
-                name: 'root1',
-                children: [
-                    { id: 2, name: 'child1' },
-                    { id: 3, name: 'child2' }
-                ]
-            },
-            {
-                id: 4,
-                name: 'root2',
-                children: [
-                    { id: 5, name: 'child2.1' },
-                    {
-                        id: 6,
-                        name: 'child2.2',
-                        children: [
-                            { id: 7, name: 'subsub' }
-                        ]
-                    }
-                ]
-            }
-        ];
+        this.getTreeData();
+        this.getFormJson();
+    }
+
+    public async getTreeData() {
+        this.nodes = await this.dataService.getTreeData();
         this.options = {};
     }
 
+    public async getFormJson() {
+        this.forms = await this.dataService.getFormJson();
+    }
+
+    public trackByFn(index: number) {
+        return index;
+    }
 }

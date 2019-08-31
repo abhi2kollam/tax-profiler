@@ -2,5 +2,18 @@
     <div class="column col-md-3 border border-dark p-md-4">
         <tree-root [nodes]="nodes" [options]="options"></tree-root>
     </div>
-    <div class="column col-md-9"></div>
+    <div class="column col-md-9 border border-dark p-md-4">
+        <ng-container *ngIf="forms">
+            <div *ngFor="let form of forms.FieldList; trackBy: trackByFn" class="row">
+                <div class="column col-md-2">
+                    <label>
+                        {{form.Text}}
+                    </label>
+                </div>
+                <div *ngIf="form.Type === 'Text_Input'" class="column col-md-10">
+                    <input type="text" [(ngModel)]="data[form.Name]" />
+                </div>
+            </div>
+        </ng-container>
+    </div>
 </div>
