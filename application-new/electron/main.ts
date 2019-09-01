@@ -5,7 +5,7 @@ import * as fs from 'fs';
 const clustering = require('density-clustering');
 
 let win: BrowserWindow;
-const headers = [];
+let headers = [];
 let config;
 
 app.on('ready', createWindow);
@@ -43,6 +43,7 @@ function createWindow() {
 ipcMain.on('processFiles', (event, arg) => {
     const rows: any[] = [];
     config = arg.config;
+    headers = [];
     for (let index = 0; index < config.length; index++) {
         const formDetails = config[index];
         headers.push(formDetails.ColumnName);
