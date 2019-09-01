@@ -10,16 +10,20 @@
         <button class="btn btn-primary float-right" type="submit">Process</button>
     </div>
 </form>
-<div class="table-responsive">
+<div class="table-responsive h-100">
 
     <table class="table">
-        <tr>
-            <th *ngFor="let header of TABLE_HEADER">{{header}}</th>
-        </tr>
-        <tr *ngFor="let row of tableRows">
-            <td *ngFor="let col of row">
-                {{col}}
-            </td>
-        </tr>
+        <thead>
+            <tr>
+                <th *ngFor="let header of TABLE_HEADER">{{header}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of tableRows">
+                <td *ngFor="let col of row">
+                    {{col}}
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>
