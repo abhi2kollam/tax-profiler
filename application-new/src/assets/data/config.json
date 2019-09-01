@@ -3,78 +3,91 @@
         "FormNumber": "Form4797",
         "icon": "SaleBusinessProperty.png",
         "ColumnName": "SaleBusinessProperty",
-        "Questionnaire": "Did you Sell any Business Propery this year?"
+        "Questionnaire": "Did you Sell any Business Property this year?",
+        "ConfirmationMessage": "You have sold a Business property the current year"
     },
     {
         "FormNumber": "Form6251",
         "ColumnName": "AlternateMinimumTax",
         "icon": "AlternateMinimumTax.png",
-        "Questionnaire": "Is alternate Minimum Tax Applicable for you?"
+        "Questionnaire": "Is alternate Minimum Tax Applicable for you?",
+        "ConfirmationMessage":"Minimum Tax is applicable for you"
     },
     {
         "FormNumber": "Form4835",
         "ColumnName": "FarmRentalIncome",
         "icon": "FarmRentalIncome.png",
-        "Questionnaire": "Did you have any farm Rental income?"
+        "Questionnaire": "Did you have any farm Rental income?",
+        "ConfirmationMessage":"You have a farm Rental Income"
     },
     {
         "FormNumber": "Form8606",
         "ColumnName": "ContributionIRA",
         "icon": "ContributionIRA.png",
-        "Questionnaire": "Did you make any non deductible contributions to IRA"
+        "Questionnaire": "Did you make any non deductible contributions to IRA",
+        "ConfirmationMessage":"You have made Non-Deductible contributions to IRA"
     },
     {
         "FormNumber": "Form4562",
         "ColumnName": "DepreciationProperty",
         "icon": "DepreciationProperty.png",
-        "Questionnaire": "Do you expect any depreciation of any property that you own"
+        "Questionnaire": "Do you expect any depreciation of any property that you own",
+        "ConfirmationMessage":"Your property will be subject to Depreciation this year"
     },
     {
         "FormNumber": "Form8949",
         "ColumnName": "CapitalAssetSale",
         "icon": "CapitalAssetSale.png",
-        "Questionnaire": "Did you Sell any capital assets this year"
+        "Questionnaire": "Did you Sell any capital assets this year",
+        "ConfirmationMessage":"You have sold Capital Assets this year"
     },
     {
         "FormNumber": "Form5329",
         "ColumnName": "AdditionalTaxIRA",
         "icon": "AdditionalTaxIRA.png",
-        "Questionnaire": "Were any additional taxes Applicable for IRA contributions"
+        "Questionnaire": "Were any additional taxes Applicable for IRA contributions",
+        "ConfirmationMessage":"Additional taxes are applicable for your IRA contributions"
     },
     {
         "FormNumber": "Form8880",
         "ColumnName": "SaversCredit",
         "icon": "SaversCredit.png",
-        "Questionnaire": "Do you qualify for savers Credit"
+        "Questionnaire": "Do you qualify for savers Credit",
+        "ConfirmationMessage":"You qualify for Savers Credit"
     },
     {
         "FormNumber": "Form8863",
         "ColumnName": "EducationCredit",
         "icon": "EducationCredit.png",
-        "Questionnaire": "Do you want to offset higher education expenses for PG"
+        "Questionnaire": "Do you want to offset higher education expenses for PG",
+        "ConfirmationMessage":"You have decided to offset you higher education expenses"
     },
     {
         "FormNumber": "Schedule8812 ChildTaxCredit ",
         "ColumnName": "ChildTaxCredit",
         "icon": "ChildTaxCredit.png",
-        "Questionnaire": "Did you provide half of the Child Support and is your child younger than 16"
+        "Questionnaire": "Did you provide half of the Child Support and is your child younger than 16",
+        "ConfirmationMessage":"You qualify Child Tax Credit"
     },
     {
         "FormNumber": "ScheduleC",
         "ColumnName": "ProfitLossBusiness",
         "icon": "SaleBusinessProperty.png",
-        "Questionnaire": "Did you have a profit or loss from your Business"
+        "Questionnaire": "Did you have a profit or loss from your Business",
+        "ConfirmationMessage":"You have incurred profit or Loss from your business"
     },
     {
         "FormNumber": "Form2106",
         "ColumnName": "EmployeeBusinessExpenses",
-        "icon": "SaleBusinessProperty.png",
-        "Questionnaire": "Did you incur any Employee Business Expenses"
+        "icon": "EmployeeBusinessExpenses.png",
+        "Questionnaire": "Did you incur any Employee Business Expenses",
+        "ConfirmationMessage":"You have incurred Employee Business Expense"
     },
     {
         "FormNumber": "Form2106",
         "ColumnName": "ClientGovernmentOfficial",
         "icon": "ClientGovernmentOfficial.png",
-        "Questionnaire": "Are your Federal/State Government official"
+        "Questionnaire": "Are your Federal/State Government official",
+        "ConfirmationMessage":"You are a Federal/State Government Official"
     }
 ]
