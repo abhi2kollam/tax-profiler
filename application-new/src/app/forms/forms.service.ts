@@ -7,6 +7,7 @@ import { HttpClient } from "@angular/common/http";
 export class FormService {
 
     public suggestedFormsList: string[] = [];
+    public suggestedFormNamesList: string[] = [];
 
     constructor(private http: HttpClient) { }
 
