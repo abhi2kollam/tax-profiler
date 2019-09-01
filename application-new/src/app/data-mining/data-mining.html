@@ -2,15 +2,22 @@
     <div class="input-group">
         <div class="input-group-prepend"></div>
         <div class="custom-file">
-            <input aria-describedby="inputGroupFileAddon01" class="custom-file-input" #file id="inputGroupFile01"
-                type="file" multiple><label class="custom-file-label" for="inputGroupFile01">Choose OLZ</label>
+            <input aria-describedby="inputGroupFileAddon01" (change)="fileSelected($event)" class="custom-file-input"
+                #file id="inputGroupFile01" type="file" multiple><label class="custom-file-label"
+                for="inputGroupFile01">Choose OLZ</label>
         </div>
+    </div>
+    <div class="mb-2 mt-2 no-gutters row">
+        {{fileDescription}}
     </div>
     <div class="mb-2 mt-2 no-gutters pull-right row">
         <button class="btn btn-primary float-right" type="submit">Process</button>
+        <a (click)="showResults()">
+            <input type="button" value="Cluster Results" class="btn btn-primary float-right" [disabled]="!processed" />
+        </a>
     </div>
 </form>
-<div class="table-responsive h-100">
+<div class="table-responsive h-100" *ngIf="!showResult">
 
     <table class="table">
         <thead>
@@ -26,4 +33,9 @@
             </tr>
         </tbody>
     </table>
+</div>
+<div *ngIf="showResult" class="mt-6">
+    <div *ngFor="let row of clusterFiles; let i = index">
+        <label> CLUSTER {{i}}</label> - {{row.join(', ')}}
+    </div>
 </div>
