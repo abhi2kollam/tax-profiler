@@ -63,7 +63,7 @@ export class FormsComponent implements OnInit {
     private appendSuggestedNodes(): ITreeNode[] {
         const nodes: ITreeNode[] = [];
         let highestId = this.nodes[this.nodes.length - 1].id;
-        for (const node of this.dataService.suggestedFormsList) {
+        for (const node of this.dataService.suggestedFormNamesList) {
             nodes.push({
                 id: ++highestId,
                 children: [],

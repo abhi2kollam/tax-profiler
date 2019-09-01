@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FileService } from '../file.service';
+import { Subscription } from 'rxjs';
+import { FormService } from '../forms/forms.service';
+import { first, map, flatten } from 'lodash-es';
 
 @Component({
     selector: 'app-new-return',
@@ -28,19 +31,29 @@ import { FileService } from '../file.service';
     `]
 
 })
-export class NewReturnComponent implements OnInit {
-
+export class NewReturnComponent implements OnInit, OnDestroy {
     public questions = [];
+    public messageList = [];
+    public formList = [];
     public hidePopup = true;
+    private unsubscribe: Subscription;
+
     constructor(
         private http: HttpClient,
-        private fileService: FileService) { }
+        private fileService: FileService,
+        private formService: FormService,
+        private cdr: ChangeDetectorRef) { }
 
     ngOnInit() {
         this.http.get('./assets/data/config.json')
             .toPromise()
             .then((data: any[]) => {
                 this.questions = data;
+            });
+        this.unsubscribe = this.fileService.renderTable.asObservable()
+            .subscribe(() => {
+                this.createPopupMessage();
+                this.cdr.detectChanges();
             });
     }
 
@@ -55,7 +68,24 @@ export class NewReturnComponent implements OnInit {
                 return question.active ? 1 : 0;
             });
         this.fileService.runDbScan(selectedAnswers);
+    }
 
+    trackByFn(index: number) {
+        return index;
+    }
+
+    ngOnDestroy(): void {
+        this.unsubscribe.unsubscribe();
+    }
+
+    private createPopupMessage() {
+        this.formList = [];
+        this.messageList = [];
+        for (const form of this.formService.suggestedFormsList) {
+            this.formList.push(first(this.fileService.configMap[form])['FormName']);
+            this.messageList.push(flatten(map(this.fileService.configMap[form], 'ConfirmationMessage')));
+        }
+        this.formService.suggestedFormNamesList = this.formList;
     }
 
 }
