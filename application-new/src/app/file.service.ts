@@ -3,7 +3,7 @@ import { IpcRenderer } from 'electron';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 import { FormService } from './forms/forms.service';
-import { groupBy } from 'lodash-es';
+import { groupBy, intersection, size } from 'lodash-es';
 
 @Injectable({
     providedIn: 'root'
@@ -36,10 +36,17 @@ export class FileService {
                 this.fileToFormMap = arg.fileToFormMap;
             } else {
                 const filesSize = Object.keys(this.fileToFormMap).length;
-                let formsList;
+                let formsList = [];
                 for (let i = 0; i < arg.clusters.length; ++i) {
                     if (arg.clusters[i].includes(filesSize)) {
-                        formsList = this.fileToFormMap[arg.clusters[i][0]];
+                        for (let j = 0; j < arg.clusters[i].length; ++j) {
+                            if (size(formsList) && size(this.fileToFormMap[arg.clusters[i][j]])) {
+                                formsList = intersection(formsList, this.fileToFormMap[arg.clusters[i][j]]);
+                            } else if (j === arg.clusters[i].length - 1) {
+                            } else {
+                                formsList = this.fileToFormMap[arg.clusters[i][j]];
+                            }
+                        }
                         break;
                     }
                 }
