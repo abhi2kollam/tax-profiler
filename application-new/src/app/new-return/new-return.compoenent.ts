@@ -78,14 +78,28 @@ export class NewReturnComponent implements OnInit, OnDestroy {
         this.unsubscribe.unsubscribe();
     }
 
+    /**
+     * selectOrUnselectForm
+     */
+    public selectOrUnselectForm(form) {
+        form.selected = !form.selected;
+        const forms = this.formList.filter((item) => item.name && item.selected);
+        this.formService.suggestedFormNamesList = forms.map((item1) => item1.name);
+    }
+
     private createPopupMessage() {
         this.formList = [];
         this.messageList = [];
         for (const form of this.formService.suggestedFormsList) {
-            this.formList.push(first(this.fileService.configMap[form])['FormName']);
-            this.messageList.push(flatten(map(this.fileService.configMap[form], 'ConfirmationMessage')));
+            this.formList.push(
+                {
+                    name: first(this.fileService.configMap[form])['FormName'],
+                    message: flatten(map(this.fileService.configMap[form], 'ConfirmationMessage')),
+                    selected: true
+                }
+            );
         }
-        this.formService.suggestedFormNamesList = this.formList;
+        this.formService.suggestedFormNamesList = this.formList.map((form) => form.name);
     }
 
 }

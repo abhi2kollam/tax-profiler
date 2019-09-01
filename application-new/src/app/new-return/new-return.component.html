@@ -38,12 +38,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p *ngFor="let message of messageList; trackBy: trackByFn">
-                        {{message}}
-                    </p>
-                    <p *ngFor="let form of formList; trackBy: trackByFn">
-                            {{form}}
-                    </p>
+                    <label *ngFor="let form of formList; trackBy: trackByFn">
+                        <input type="checkbox" (click)="selectOrUnselectForm(form)" [checked]="form.selected" />
+                        {{form.name}} - {{form.message}}
+                    </label>
                 </div>
                 <div class="modal-footer">
                     <a routerLink="../forms">
