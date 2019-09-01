@@ -21,11 +21,11 @@
 </div>
 <div class="">
     <a routerLink="../forms">
-        <button type="button" class=" col-1 btn btn-block btn-primary mb-3 mt-2 float-right">
+        <button type="button" class=" col-1 btn btn-block btn-secondary mb-3 mt-2 float-right">
             Cancel
         </button>
     </a>
-    <button type="button" class=" col-1 btn btn-block btn-primary mb-3 mt-2 float-right"
+    <button type="button" class=" col-1 btn btn-block btn-success mb-3 mt-2 float-right"
         (click)="findReturnCluster()">Proceed</button>
     <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
         aria-hidden="true" [ngClass]="{'show': !hidePopup}" [ngStyle]="{display: hidePopup?'none':'block'}">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="modal-footer">
                     <a routerLink="../forms">
-                        <button type="button" class="btn btn-primary">Proceed to BlockWorks Online</button>
+                        <button type="button" class="btn btn-success">Proceed to BlockWorks Online</button>
                     </a>
                     <button type="button" class="btn btn-link  ml-auto" (click)="hidePopup=true">Cancel</button>
                 </div>
