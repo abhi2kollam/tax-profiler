@@ -23,9 +23,10 @@ export class DataMiningComponent implements OnInit, OnDestroy {
     ngOnInit() {
 
         this.unsubscribe = this.fileService.renderTable.asObservable()
-            .subscribe(({ rows, headers }) => {
+            .subscribe(({ rows, headers, fileToFormMap }) => {
                 this.TABLE_HEADER = headers;
                 this.tableRows = rows;
+                this.fileService.fileToFormMap = fileToFormMap;
                 this.cdr.detectChanges();
             });
 

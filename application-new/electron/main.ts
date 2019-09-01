@@ -5,6 +5,7 @@ import * as fs from 'fs';
 
 let win: BrowserWindow;
 const headers = [];
+let config;
 
 app.on('ready', createWindow);
 
@@ -40,17 +41,21 @@ function createWindow() {
 
 ipcMain.on('processFiles', (event, arg) => {
     const rows: any[] = [];
-    const config = arg.config;
+    config = arg.config;
     for (let index = 0; index < config.length; index++) {
         const formDetails = config[index];
         headers.push(formDetails.ColumnName);
     }
+    const fileToFormMap = {};
+    const clusterFilesMap = {};
     for (let rowindex = 0; rowindex < arg.files.length; rowindex++) {
         rows.push([]);
         const file = arg.files[rowindex];
         fs.readFile(file.path, (err, data: any) => {
             if (err) { throw err; }
             const content = JSON.parse(data);
+            fileToFormMap[rowindex] = Object.keys(content);
+            clusterFilesMap[rowindex] = file.name;
             for (let index = 0; index < config.length; index++) {
                 const formDetails = config[index];
                 rows[rowindex][index] = content[formDetails.FormNumber] ? 1 : 0;
@@ -60,7 +65,15 @@ ipcMain.on('processFiles', (event, arg) => {
                 const dbscan = new clustering.DBSCAN();
                 // parameters: 5 - neighborhood radius, 2 - number of points in neighborhood to form a cluster
                 const clusters = dbscan.run(rows, .5, 4);
-                win.webContents.send('getFilesResponse', { rows, headers, clusters });
+                let clusterFiles = [];
+                for (const cluster of clusters) {
+                    let olzs = [];
+                    for(const clusterpoint of cluster){
+                        olzs.push(clusterFilesMap[clusterpoint]);
+                    }
+                    clusterFiles.push(olzs);
+                }
+                win.webContents.send('getFilesResponse', { rows, headers, clusters, fileToFormMap, clusterFiles });
             }
 
         });

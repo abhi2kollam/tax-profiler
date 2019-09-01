@@ -1,78 +1,91 @@
 [
     {
         "FormNumber": "Form4797",
+        "FormName": "Form 4797",
         "icon": "SaleBusinessProperty.png",
         "ColumnName": "SaleBusinessProperty",
         "Questionnaire": "Did you Sell any Business Propery this year?"
     },
     {
         "FormNumber": "Form6251",
+        "FormName": "Form 6251",
         "ColumnName": "AlternateMinimumTax",
         "icon": "AlternateMinimumTax.png",
         "Questionnaire": "Is alternate Minimum Tax Applicable for you?"
     },
     {
         "FormNumber": "Form4835",
+        "FormName": "Form 4835",
         "ColumnName": "FarmRentalIncome",
         "icon": "FarmRentalIncome.png",
         "Questionnaire": "Did you have any farm Rental income?"
     },
     {
         "FormNumber": "Form8606",
+        "FormName": "Form 8606",
         "ColumnName": "ContributionIRA",
         "icon": "ContributionIRA.png",
         "Questionnaire": "Did you make any non deductible contributions to IRA"
     },
     {
         "FormNumber": "Form4562",
+        "FormName": "Form 4562",
         "ColumnName": "DepreciationProperty",
         "icon": "DepreciationProperty.png",
         "Questionnaire": "Do you expect any depreciation of any property that you own"
     },
     {
         "FormNumber": "Form8949",
+        "FormName": "Form 8949",
         "ColumnName": "CapitalAssetSale",
         "icon": "CapitalAssetSale.png",
         "Questionnaire": "Did you Sell any capital assets this year"
     },
     {
         "FormNumber": "Form5329",
+        "FormName": "Form 5329",
         "ColumnName": "AdditionalTaxIRA",
         "icon": "AdditionalTaxIRA.png",
         "Questionnaire": "Were any additional taxes Applicable for IRA contributions"
     },
     {
         "FormNumber": "Form8880",
+        "FormName": "Form 8880",
         "ColumnName": "SaversCredit",
         "icon": "SaversCredit.png",
         "Questionnaire": "Do you qualify for savers Credit"
     },
     {
         "FormNumber": "Form8863",
+        "FormName": "Form 8863",
         "ColumnName": "EducationCredit",
         "icon": "EducationCredit.png",
         "Questionnaire": "Do you want to offset higher education expenses for PG"
     },
     {
-        "FormNumber": "Schedule8812 ChildTaxCredit ",
+        "FormNumber": "Schedule8812 ChildTaxCredit",
+        "FormName": "Schedule 8812 ChildTaxCredit",
         "ColumnName": "ChildTaxCredit",
         "icon": "ChildTaxCredit.png",
         "Questionnaire": "Did you provide half of the Child Support and is your child younger than 16"
     },
     {
         "FormNumber": "ScheduleC",
+        "FormName": "Schedule C",
         "ColumnName": "ProfitLossBusiness",
         "icon": "SaleBusinessProperty.png",
         "Questionnaire": "Did you have a profit or loss from your Business"
     },
     {
         "FormNumber": "Form2106",
+        "FormName": "Form 2106",
         "ColumnName": "EmployeeBusinessExpenses",
         "icon": "SaleBusinessProperty.png",
         "Questionnaire": "Did you incur any Employee Business Expenses"
     },
     {
         "FormNumber": "Form2106",
+        "FormName": "Form 2106",
         "ColumnName": "ClientGovernmentOfficial",
         "icon": "ClientGovernmentOfficial.png",
         "Questionnaire": "Are your Federal/State Government official"
